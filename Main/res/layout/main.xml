@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView  
+		android:paddingTop="20dip"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp" 
+	    android:textStyle="bold"
+	    android:gravity="center"
+		android:text="@string/what_to_do"/>
+ 	<TableLayout
+		android:paddingTop="10dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*">
+		<TableRow>
+			<TextView  
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content"
+	    		android:textSize="14sp"  
+	    		android:text="X-Axis"
+	    		android:gravity="center"/>
+	    	<TextView  
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content" 
+	    		android:textSize="14sp" 
+	    		android:text="Y-Axis"
+	    		android:gravity="center"/>
+	    	<TextView  
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content"
+	    		android:textSize="14sp"  
+	    		android:text="Z-Axis"
+	    		android:gravity="center"/>
+		</TableRow>
+		<TableRow>
+			<TextView  
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/x_axis"
+	    		android:gravity="center"/>
+	    	<TextView  
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/y_axis"
+	    		android:gravity="center"/>
+	    	<TextView  
+	    		android:layout_width="wrap_content" 
+	    		android:layout_height="wrap_content"
+	    		android:id="@+id/z_axis"
+	    		android:gravity="center"/>
+		</TableRow>
+	</TableLayout>
+
+ 	<Button
+ 	    android:id="@+id/land"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:text="Land" />
+
+ 	<Button
+ 	    android:id="@+id/takeoff"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:text="Take Off" />
+
+	<TextView  
+		android:paddingTop="20dip"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp" 
+	    android:textStyle="bold"
+	    android:gravity="center"
+		android:id="@+id/move"/>
+
+	<ImageView
+		android:paddingTop="10dip"
+		android:layout_width="wrap_content" 
+   		android:layout_height="wrap_content"
+   		android:id="@+id/image"
+   		android:layout_gravity="center"
+   		android:visibility="invisible"/>
+
+	<Button android:id="@+id/up"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/up" />
+
+	<Button android:id="@+id/down"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/down"/>
+	<Button android:id="@+id/flip"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/flip"/>
+	<Button android:id="@+id/stop"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/stop" />
+	<Switch android:id="@+id/switch_button"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textOn="Accel Mode"
+    	android:textOff="Gyro Mode"
+    	android:layout_below="@id/down"/>
+	<TextView  android:id="@+id/direction"
+	    android:paddingTop="20dip"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:textSize="16sp" 
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/switch_button"/>
+</LinearLayout>
